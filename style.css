@@ -1,0 +1,162 @@
+/* ---------- GLOBAL ---------- */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background: #0a0f29;
+  color: #ffffff;
+  overflow-x: hidden;
+}
+
+/* ---------- CONTAINER ---------- */
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: auto;
+}
+
+/* ---------- HEADER ---------- */
+.site-header {
+  background: #5ba3a8;
+  padding: 18px 0;
+}
+
+.header-inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  font-size: 22px;
+  font-weight: 700;
+  color: #fff;
+}
+
+.nav a {
+  text-decoration: none;
+  margin-left: 25px;
+  font-weight: 500;
+  color: #fff;
+  transition: 0.3s;
+}
+
+.nav a:hover {
+  color: #d3fffe;
+}
+
+/* ---------- HERO SECTION ---------- */
+.hero {
+  padding: 80px 0 120px;
+  background: radial-gradient(circle at 60% 50%, #1cd4ff33, #071225 70%);
+}
+
+/* LEFT-RIGHT BALANCED LAYOUT */
+.hero-inner {
+  display: flex;
+  justify-content: space-between;   /* left text + right image spacing */
+  align-items: center;
+  gap: 40px;
+  flex-wrap: nowrap;
+}
+
+/* ---------- LEFT TEXT AREA ---------- */
+.hero-left {
+  width: 55%;   /* Slightly wider for single line name */
+}
+
+.eyebrow {
+  font-size: 20px;
+  color: #ccefff;
+  margin-bottom: 10px;
+}
+
+.name {
+  font-size: 55px;      /* Reduced from 65px to fit one line */
+  font-weight: 800;
+  margin-bottom: 10px;
+  white-space: nowrap;   /* Force single line */
+}
+
+.role {
+  font-size: 28px;
+  margin-bottom: 20px;
+}
+
+.role span {
+  color: #14e6ff;
+  font-weight: 700;
+}
+
+.desc {
+  margin-bottom: 25px;
+  line-height: 1.7;
+  max-width: 530px;
+}
+
+/* ---------- CONTACT LIST ---------- */
+.contact-list {
+  list-style: none;
+  margin-bottom: 30px;
+}
+
+.contact-list li {
+  margin-bottom: 10px;
+  font-size: 17px;
+}
+
+.contact-list a {
+  color: #14e6ff;
+  text-decoration: none;
+}
+
+/* ---------- DOWNLOAD BUTTON ---------- */
+.btn-glow {
+  background: #14e6ff;
+  padding: 14px 30px;
+  border-radius: 10px;
+  color: #000;
+  font-size: 17px;
+  font-weight: 600;
+  text-decoration: none;
+  box-shadow: 0 0 20px #14e6ff90;
+  transition: 0.3s;
+}
+
+.btn-glow:hover {
+  box-shadow: 0 0 30px #14e6ffdd;
+}
+
+/* ---------- RIGHT SIDE IMAGE + GLOW ---------- */
+.hero-right {
+  width: 45%;   /* Remaining width for image */
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* GLOW BEHIND IMAGE */
+.glow-circle {
+  position: absolute;
+  width: 420px;
+  height: 420px;
+  background: #14e6ff40;
+  border-radius: 50%;
+  filter: blur(45px);
+  z-index: -1;
+
+  left: 50%;                /* Center glow to image */
+  transform: translateX(-50%);
+}
+
+/* PROFILE IMAGE */
+.profile {
+  width: 350px;
+  border-radius: 12px;
+  object-fit: cover;
+}
